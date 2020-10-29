@@ -7,6 +7,8 @@ COPY . app.py /app/
 
 
 RUN pip install -r requirements.txt
+RUN pip install --upgrade pip &&\
+		pip install -r requirements.txt
 
 EXPOSE 8081
 
